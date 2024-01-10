@@ -1,0 +1,6 @@
+<div>
+    <input type="number" [(ngModel)]="p1" (change)="getResult()" (keyup)="getResult()">
+    {{ operador }}
+    <input type="number" [(ngModel)]="p2" (change)="getResult()" (keyup)="getResult()">
+    = <span style="padding: 0 5px;" highlightValue [resultado]="resultado">{{ resultado }}</span>
+</div>

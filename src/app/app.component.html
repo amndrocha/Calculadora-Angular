@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="botoes">
+        <button (click)="mudaOperador('+')" [class.active]="operador=='+'">Soma</button>
+        <button (click)="mudaOperador('-')" [class.active]="operador=='-'">Subtração</button>
+        <button (click)="mudaOperador('*')" [class.active]="operador=='*'">Multiplicação</button>
+        <button (click)="mudaOperador('/')" [class.active]="operador=='/'">Divisão</button>
+    </div>
+
+    <app-calculadora (novoResultado)="confere($event)" [operador]="operador"></app-calculadora>
+
+    <div class="alert alert-danger"
+    role="alert"
+    [style.display]="erro ? 'block' : 'none'">
+        ERRO: Divisão por zero
+    </div>
+
+</div>

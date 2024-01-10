@@ -1,0 +1,15 @@
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    outline: 1px solid black;
+    padding: 50px 10px;
+    margin-bottom: 6px;
+}
+
+.fitBox {
+    width: 9px;
+    border: none;
+}
