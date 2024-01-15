@@ -1,0 +1,5 @@
+<app-chat [openChat]="openChat" (newOpenChat)="updateOpenChat($event)"></app-chat>
+
+<button [style.display]="openChat ? 'none' : 'block'" (click)="handleBtn()">
+    <img class="chat-icon" src="assets/chat-icon.svg"/>
+</button>

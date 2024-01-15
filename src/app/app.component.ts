@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
+
 import { HighlightValueDirective } from './highlight-value.directive';
+import { ChatButtonComponent } from './chat/chat-button/chat-button.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, SharedModule, HighlightValueDirective],
+  imports: [CommonModule, RouterOutlet, SharedModule, HighlightValueDirective, ChatButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
